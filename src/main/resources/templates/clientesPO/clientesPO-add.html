@@ -36,18 +36,30 @@
   <link rel="stylesheet" href="/assets/css/kaiadmin.min.css" />
 </head>
 <body>
-    <header>
-
+    <header class="navbar navbar-expand-lg bg-dark">
+        <div class="container">
+            <ul class="nav nav-tabs nav-line nav-color-secondary mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active text-white" id="line-home-tab" href="/">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" id="line-profile-tab" href="/perfil">Perfil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" id="line-contact-tab" href="/login">Cerrar Sesión</a>
+              </li>
+            </ul>
+          </div>
     </header>
-    <main class="d-flex flex-wrap align-items-center">
+    <main class="mt-4">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-6 mx-auto">
                 <div class="card">
                     <div class="card-header">
                         <div class="card-title">Añadir Cliente Potencial</div>
                     </div>
                     <div class="card-body">
-                        <form method="post" action="/ClientesPO">
+                        <form method="post" action="/ClientesPO/crear">
                             <div class="form-group">
                                 <label>ID</label>
                                 <input
@@ -123,5 +135,39 @@
             </div>
           </div>
     </footer>
+
+    <script src="/assets/js/core/jquery-3.7.1.min.js"></script>
+	<script src="/assets/js/core/popper.min.js"></script>
+	<script src="/assets/js/core/bootstrap.min.js"></script>
+	
+	<!-- jQuery Scrollbar -->
+	<script src="/assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+	<!-- Moment JS -->
+	<script src="/assets/js/plugin/moment/moment.min.js"></script>
+
+	<!-- Chart JS -->
+	<script src="assets/js/plugin/chart.js/chart.min.js"></script>
+
+	<!-- jQuery Sparkline -->
+	<script src="/assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+
+	<!-- Chart Circle -->
+	<script src="assets/js/plugin/chart-circle/circles.min.js"></script>
+
+	<!-- Datatables -->
+	<script src="/assets/js/plugin/datatables/datatables.min.js"></script>
+
+	<!-- Bootstrap Notify -->
+	<script src="/assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+	<!-- jQuery Vector Maps -->
+	<script src="/assets/js/plugin/jsvectormap/jsvectormap.min.js"></script>
+	<script src="/assets/js/plugin/jsvectormap/world.js"></script>
+
+	<!-- Sweet Alert -->
+	<script src="/assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+
+	<!-- Kaiadmin JS -->
+	<script src="/assets/js/kaiadmin.min.js"></script>
 </body>
 </html>
