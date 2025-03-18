@@ -11,8 +11,5 @@ public class homeController {
     public String home_index() {
         return "index";
     }
-    @GetMapping("/index")
-    public String home_index_get() {
-        return "index";
-    }
+    
 }

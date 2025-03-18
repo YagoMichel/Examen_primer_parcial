@@ -4,8 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clientes añadir</title>
+    <link
+    rel="icon"
+    href="assets/img/kaiadmin/favicon.ico"
+    type="image/x-icon"
+  />
+
+  <!-- Fonts and icons -->
+  <script src="/assets/js/plugin/webfont/webfont.min.js"></script>
+  <script>
+    WebFont.load({
+      google: { families: ["Public Sans:300,400,500,600,700"] },
+      custom: {
+        families: [
+          "Font Awesome 5 Solid",
+          "Font Awesome 5 Regular",
+          "Font Awesome 5 Brands",
+          "simple-line-icons",
+        ],
+        urls: ["/assets/css/fonts.min.css"],
+      },
+      active: function () {
+        sessionStorage.fonts = true;
+      },
+    });
+  </script>
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/plugins.min.css" />
+  <link rel="stylesheet" href="/assets/css/kaiadmin.min.css" />
 </head>
 <body>
-    hola
+    <header>
+
+    </header>
+    <main class="d-flex flex-wrap align-items-center">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Añadir Cliente Potencial</div>
+                    </div>
+                    <div class="card-body">
+                        <form method="post" action="/ClientesPO">
+                            <div class="form-group">
+                                <label>ID</label>
+                                <input
+                                type="number"
+                                class="form-control"
+                                id="ID_potencial_cliente"
+                                value="11"
+                                disabled
+                                />
+                                <label>Nombre de la Empresa</label>
+                                <input
+                                type="text"
+                                class="form-control form-control"
+                                id="nombre_empresa"
+                                placeholder="Ingrese el nombre de la empresa"
+                                />
+                                <label>Persona de Contacto</label>
+                                <input
+                                type="text"
+                                class="form-control"
+                                id="persona_contacto"
+                                placeholder="Ingrese el nombre de la persona de contacto"
+                                />
+                                <label>Correo Electronico</label>
+                                <input
+                                type="email"
+                                class="form-control"
+                                id="email2"
+                                placeholder="Ingrese Correo Electronico"
+                                />
+                                <label>Número de Telefóno</label>
+                                <input
+                                type="text"
+                                class="form-control"
+                                id="numero_persona_contacto"
+                                placeholder="Ingrese el número telefónico de la persona de contacto"
+                                />
+                            </div>
+                            <div class="card-action">
+                                <input type="submit" class="btn btn-success" value="Crear">
+                                <a href="/ClientesPO" class="btn btn-danger">Cancelar</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid d-flex justify-content-between">
+            <nav class="pull-left">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="http://www.themekita.com">
+                    ThemeKita
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Help </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Licenses </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="copyright">
+              2024, made with <i class="fa fa-heart heart text-danger"></i> by
+              <a href="http://www.themekita.com">ThemeKita</a>
+            </div>
+            <div>
+              Distributed by
+              <a target="_blank" href="https://themewagon.com/">ThemeWagon</a>.
+            </div>
+          </div>
+    </footer>
 </body>
 </html>
